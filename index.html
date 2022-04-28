@@ -1200,6 +1200,19 @@
             
             <!-- Single Logo -->
             
+            <div class="flex items-center px-4 m-4 space-x-3 font-medium text-primary">
+                <svg aria-hidden="true" class="flex-shrink-0 w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.5 4.8a2.4 2.4 0 0 0-2.4 2.4v2.4a2.4 2.4 0 1 0 4.8 0V7.2a2.4 2.4 0 0 0-2.4-2.4Z" fill="#1E3A8A" />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.1 9.6h7.2a7.2 7.2 0 1 0 14.4 0h7.2a4.8 4.8 0 0 1 4.8 4.8V36a4.8 4.8 0 0 1-4.8 4.8H10.1A4.8 4.8 0 0 1 5.3 36V14.4a4.8 4.8 0 0 1 4.8-4.8Zm6 16.8a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Zm5.881 9.6a6 6 0 1 0-11.76 0h11.76ZM29.3 21.6a2.4 2.4 0 1 0 0 4.8h7.2a2.4 2.4 0 1 0 0-4.8h-7.2Zm-2.4 9.6a2.4 2.4 0 0 1 2.4-2.4h4.8a2.4 2.4 0 1 1 0 4.8h-4.8a2.4 2.4 0 0 1-2.4-2.4Z"
+                        fill="currentColor"
+                    />
+                </svg>
+                <span class="text-xl">25 Years in business</span>
+            </div>
+            
         </div>
     </div>
 </section>
@@ -2017,27 +2030,6 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1d4a5dbf-1a11-4250-a057-be7d6d8521b9.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1d4a5dbf-1a11-4250-a057-be7d6d8521b9.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/> 
@@ -2057,13 +2049,34 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="" /> -->
                             
                         </div>
 
@@ -2080,11 +2093,11 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="" /> -->
                             
                         </div>
 
@@ -2651,7 +2664,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1d4a5dbf-1a11-4250-a057-be7d6d8521b9.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2659,7 +2672,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1d4a5dbf-1a11-4250-a057-be7d6d8521b9.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2f7adf8b-8948-436e-a46e-6674f1a3a6e3.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2667,7 +2680,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2675,7 +2688,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/add353b0-acf6-46ad-957f-d9ad22d67fa0.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4ec673f-d78b-4b5f-b775-93f91e228423.png" alt="Additions for NorthCastle Construction LLC in Oxford, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -3011,7 +3024,22 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">None</span>
+                                        <span class="sr-only">Facebook</span>
+                                        
+                                        <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
                                         
                                     
                                     </div>
@@ -3101,7 +3129,22 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">None</span>
+                                        <span class="sr-only">Facebook</span>
+                                        
+                                        <svg
+                                            aria-hidden="true"
+                                            class="text-blue-900 transition-transform w-7 h-7"
+                                            viewBox="0 0 30 30"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
                                         
                                     
                                     </div>
@@ -3149,7 +3192,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="60465"
+                                aria-controls="61052"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -3169,7 +3212,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="60465">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="61052">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at 7708439615. Thanks!</p>
                         </dd>
@@ -3182,7 +3225,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="60466"
+                                aria-controls="61053"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -3202,7 +3245,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="60466">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="61053">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -3215,7 +3258,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="60467"
+                                aria-controls="61054"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -3235,7 +3278,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="60467">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="61054">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3814,79 +3857,79 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197120"
-                                                    name="197120"
+                                                    id="contact-service-198404"
+                                                    name="198404"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Additions"
                                             />
-                                            <label for="contact-label-service-197120" class="ml-3 text-sm font-medium text-gray-700">Additions</label>
+                                            <label for="contact-label-service-198404" class="ml-3 text-sm font-medium text-gray-700">Additions</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197121"
-                                                    name="197121"
+                                                    id="contact-service-198405"
+                                                    name="198405"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Installation"
                                             />
-                                            <label for="contact-label-service-197121" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Installation</label>
+                                            <label for="contact-label-service-198405" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197122"
-                                                    name="197122"
+                                                    id="contact-service-198406"
+                                                    name="198406"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Drywall Installation & Repair"
                                             />
-                                            <label for="contact-label-service-197122" class="ml-3 text-sm font-medium text-gray-700">Drywall Installation & Repair</label>
+                                            <label for="contact-label-service-198406" class="ml-3 text-sm font-medium text-gray-700">Drywall Installation & Repair</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197123"
-                                                    name="197123"
+                                                    id="contact-service-198407"
+                                                    name="198407"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Painting"
                                             />
-                                            <label for="contact-label-service-197123" class="ml-3 text-sm font-medium text-gray-700">Painting</label>
+                                            <label for="contact-label-service-198407" class="ml-3 text-sm font-medium text-gray-700">Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197124"
-                                                    name="197124"
+                                                    id="contact-service-198408"
+                                                    name="198408"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Remodeling"
                                             />
-                                            <label for="contact-label-service-197124" class="ml-3 text-sm font-medium text-gray-700">Remodeling</label>
+                                            <label for="contact-label-service-198408" class="ml-3 text-sm font-medium text-gray-700">Remodeling</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197125"
-                                                    name="197125"
+                                                    id="contact-service-198409"
+                                                    name="198409"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Tile & Flooring"
                                             />
-                                            <label for="contact-label-service-197125" class="ml-3 text-sm font-medium text-gray-700">Tile & Flooring</label>
+                                            <label for="contact-label-service-198409" class="ml-3 text-sm font-medium text-gray-700">Tile & Flooring</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197126"
-                                                    name="197126"
+                                                    id="contact-service-198410"
+                                                    name="198410"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Siding and Windows"
                                             />
-                                            <label for="contact-label-service-197126" class="ml-3 text-sm font-medium text-gray-700">Siding and Windows</label>
+                                            <label for="contact-label-service-198410" class="ml-3 text-sm font-medium text-gray-700">Siding and Windows</label>
                                         </div>
                                         
                                     </div>
@@ -3917,79 +3960,79 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197120"
-                                                    name="197120"
+                                                    id="contact-service-198404"
+                                                    name="198404"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Additions"
                                             />
-                                            <label for="contact-label-service-197120" class="ml-3 text-sm font-medium text-gray-700">Additions</label>
+                                            <label for="contact-label-service-198404" class="ml-3 text-sm font-medium text-gray-700">Additions</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197121"
-                                                    name="197121"
+                                                    id="contact-service-198405"
+                                                    name="198405"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Installation"
                                             />
-                                            <label for="contact-label-service-197121" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Installation</label>
+                                            <label for="contact-label-service-198405" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197122"
-                                                    name="197122"
+                                                    id="contact-service-198406"
+                                                    name="198406"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Drywall Installation & Repair"
                                             />
-                                            <label for="contact-label-service-197122" class="ml-3 text-sm font-medium text-gray-700">Drywall Installation & Repair</label>
+                                            <label for="contact-label-service-198406" class="ml-3 text-sm font-medium text-gray-700">Drywall Installation & Repair</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197123"
-                                                    name="197123"
+                                                    id="contact-service-198407"
+                                                    name="198407"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Painting"
                                             />
-                                            <label for="contact-label-service-197123" class="ml-3 text-sm font-medium text-gray-700">Painting</label>
+                                            <label for="contact-label-service-198407" class="ml-3 text-sm font-medium text-gray-700">Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197124"
-                                                    name="197124"
+                                                    id="contact-service-198408"
+                                                    name="198408"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Remodeling"
                                             />
-                                            <label for="contact-label-service-197124" class="ml-3 text-sm font-medium text-gray-700">Remodeling</label>
+                                            <label for="contact-label-service-198408" class="ml-3 text-sm font-medium text-gray-700">Remodeling</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197125"
-                                                    name="197125"
+                                                    id="contact-service-198409"
+                                                    name="198409"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Tile & Flooring"
                                             />
-                                            <label for="contact-label-service-197125" class="ml-3 text-sm font-medium text-gray-700">Tile & Flooring</label>
+                                            <label for="contact-label-service-198409" class="ml-3 text-sm font-medium text-gray-700">Tile & Flooring</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-197126"
-                                                    name="197126"
+                                                    id="contact-service-198410"
+                                                    name="198410"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Siding and Windows"
                                             />
-                                            <label for="contact-label-service-197126" class="ml-3 text-sm font-medium text-gray-700">Siding and Windows</label>
+                                            <label for="contact-label-service-198410" class="ml-3 text-sm font-medium text-gray-700">Siding and Windows</label>
                                         </div>
                                         
                                     </div>
