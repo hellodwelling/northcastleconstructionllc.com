@@ -2,3 +2,89 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/index</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/store</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/reviews</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/gallery-All</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/gallery-Remodeling</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/service-Drywall-Installation-&-Repair</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/service-Additions</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/service-Deck-&-Patio-Installation</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/service-Remodeling</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/service-Painting</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/service-Tile-&-Flooring</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://northcastleconstructionllc.com/service-Siding-and-Windows</loc>
+        <lastmod>2022-04-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+</urlset>
